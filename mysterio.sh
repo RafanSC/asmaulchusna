@@ -611,8 +611,8 @@ fun_bar 'res9'
 
 function iinfo(){
 TIMES="10"
-CHATID="-1002137978053"
-KEY="5750499608:AAG1YECResBHyvbi1PbRP40fSiLU4QV1kgQ"
+CHATID="-1001796404259"
+KEY="6269531379:AAHXp-4nxp2b0nK4vVePV5G0iiUNxxLFxBg"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 ISP=$(cat /etc/xray/isp)
 CITY=$(cat /etc/xray/city)
