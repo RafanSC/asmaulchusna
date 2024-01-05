@@ -638,7 +638,7 @@ TEXT="
 <code>ISP : </code><code>${ISP} $CITY</code>
 <code>OS LINUX : </code><code>${MODEL2}</code>
 <code>RAM : </code><code>${RAMMS} MB</code>
-<code>EXP SCRIPT : </code><code>$EXP Days</code>
+<code>EXP SCRIPT : </code><code>${EXP} Days</code>
 <code>◇━━━━━━━━━━━━━━━━━━━◇</code>
 <i>Automatic Notification From Installer Client...</i>
 "'&reply_markup={"inline_keyboard":[[{"text":"🛂ᴏʀᴅᴇʀ","url":"https://t.me/RafanSTR18"},{"text":"🎲GRUP","url":"https://t.me/vpnmix_1"}]]}'
