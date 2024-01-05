@@ -611,17 +611,18 @@ fun_bar 'res9'
 }
 
 function iinfo(){
+domain=$(cat /etc/xray/domain)
 TIMES="10"
 CHATID="-1001796404259"
 KEY="6269531379:AAHXp-4nxp2b0nK4vVePV5G0iiUNxxLFxBg"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 ISP=$(cat /etc/xray/isp)
 CITY=$(cat /etc/xray/city)
-domain=$(cat /etc/xray/domain | awk -F. '{ print $1".xxx.xxx.xxx" }')
+domain=$(cat /etc/xray/domain) 
 TIME=$(date +'%Y-%m-%d %H:%M:%S')
 RAMMS=$(free -m | awk 'NR==2 {print $2}')
 MODEL2=$(cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/PRETTY_NAME//g')
-MYIP=$(curl -sS ipv4.icanhazip.com | awk -F. '{ print $1"."$2".xxx.xxx" }')
+MYIP=$(curl -sS ipv4.icanhazip.com)
 IZIN=$(curl -sS https://raw.githubusercontent.com/RafanSC/penamas/master/penak | grep $MYIP | awk '{print $3}' )
 d1=$(date -d "$IZIN" +%s)
 d2=$(date -d "$today" +%s)
@@ -638,7 +639,7 @@ TEXT="
 <code>ISP : </code><code>${ISP} $CITY</code>
 <code>OS LINUX : </code><code>${MODEL2}</code>
 <code>RAM : </code><code>${RAMMS} MB</code>
-<code>EXP SCRIPT : </code><code>$IZIN ($EXP Days)</code>
+<code>EXP SCRIPT : </code><code>$EXP Days</code>
 <code>◇━━━━━━━━━━━━━━━━━━━◇</code>
 <i>Automatic Notification From Installer Client...</i>
 "'&reply_markup={"inline_keyboard":[[{"text":"🛂ᴏʀᴅᴇʀ","url":"https://t.me/RafanSTR18"},{"text":"🎲GRUP","url":"https://t.me/vpnmix_1"}]]}'
