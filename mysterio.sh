@@ -640,7 +640,7 @@ TEXT="
 <code>EXP SCRIPT : </code><code>$EXP Days</code>
 <code>◇━━━━━━━━━━━━━━━━━━━◇</code>
 <i>Automatic Notification From Installer Client...</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"🛂ᴏʀᴅᴇʀ","url":"https://t.me/wongedan_kuwibebas"},{"text":"🎲GRUP","url":"https://t.me/tesautoesce"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"🛂ᴏʀᴅᴇʀ","url":"https://t.me/RafanSTR18"},{"text":"🎲GRUP","url":"https://t.me/vpnmix_1"}]]}'
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 clear
 }
