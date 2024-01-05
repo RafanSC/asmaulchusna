@@ -558,12 +558,12 @@ clear
 }
 
 res8() {
-wget https://raw.githubusercontent.com/RafanSC/asmaulchusna/master/slowdns/installsl.sh && chmod +x installsl.sh && ./installsl.sh
+wget https://raw.githubusercontent.com/RafanSC/asmaulchusna/master/install/udp-custom.sh && chmod +x udp-custom.sh && ./udp-custom.sh
 clear
 }
 
 res9() {
-wget -q -O /usr/bin/swapram "https://raw.githubusercontent.com/wongedann/swapram/main/swapram.sh" && chmod +x /usr/bin/swapram && swapram
+wget https://raw.githubusercontent.com/RafanSC/asmaulchusna/master/slowdns/installsl.sh && chmod +x installsl.sh && ./installsl.sh
 clear
 }
 
@@ -600,12 +600,12 @@ echo -e "${tyblue}└───────────────────�
 fun_bar 'res7'
 
 echo -e "${tyblue}┌──────────────────────────────────────────┐${NC}" | lolcat
-echo -e "${tyblue}│           DOWNLOAD SYSTEM                │${NC}" | lolcat
+echo -e "${tyblue}│           DOWNLOAD UDP CUSTOM            │${NC}" | lolcat
 echo -e "${tyblue}└──────────────────────────────────────────┘${NC}" | lolcat
 fun_bar 'res8'
 
 echo -e "${tyblue}┌──────────────────────────────────────────┐${NC}" | lolcat
-echo -e "${tyblue}│           INSTALL SWAP-RAM               │${NC}" | lolcat
+echo -e "${tyblue}│           DOWNLOAD SYSTEM                │${NC}" | lolcat
 echo -e "${tyblue}└──────────────────────────────────────────┘${NC}" | lolcat
 fun_bar 'res9'
 }
@@ -624,9 +624,8 @@ MODEL2=$(cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/=//g' | s
 MYIP=$(curl -sS ipv4.icanhazip.com | awk -F. '{ print $1"."$2".xxx.xxx" }')
 IZIN=$(curl -sS https://raw.githubusercontent.com/RafanSC/penamas/master/penak | grep $MYIP | awk '{print $3}' )
 d1=$(date -d "$IZIN" +%s)
-today=$(date +'%Y-%m-%d')
 d2=$(date -d "$today" +%s)
-certificate=$(( (d1 - d2) / 86400 ))
+EXP=$(( (d1 - d2) / 86400 ))
 
 TEXT="
 <code>◇━━━━━━━━━━━━━━━━━━━◇</code>
@@ -639,7 +638,7 @@ TEXT="
 <code>ISP : </code><code>${ISP} $CITY</code>
 <code>OS LINUX : </code><code>${MODEL2}</code>
 <code>RAM : </code><code>${RAMMS} MB</code>
-<code>DURASI SCRIPT : ${certificate} Days</code>
+<code>EXP SCRIPT : </code><code>$IZIN ($EXP Days)</code>
 <code>◇━━━━━━━━━━━━━━━━━━━◇</code>
 <i>Automatic Notification From Installer Client...</i>
 "'&reply_markup={"inline_keyboard":[[{"text":"🛂ᴏʀᴅᴇʀ","url":"https://t.me/RafanSTR18"},{"text":"🎲GRUP","url":"https://t.me/vpnmix_1"}]]}'
