@@ -370,7 +370,7 @@ fi
 if [[ $domain2 == "1" ]]; then
 clear
 echo -e  "${tyblue}┌──────────────────────────────────────────┐${NC}" | lolcat
-echo -e  "${tyblue}│  \033[1;37mContoh subdomain xxx.vps-ku.my.id        ${tyblue}│${NC}" | lolcat
+echo -e  "${tyblue}│  \033[1;37mContoh subdomain xxx.vps-ku.my.id       ${tyblue}│${NC}" | lolcat
 echo -e  "${tyblue}│    \033[1;37mxxx jadi subdomain kamu               ${tyblue}│${NC}" | lolcat
 echo -e  "${tyblue}└──────────────────────────────────────────┘${NC}" | lolcat
 echo " "
