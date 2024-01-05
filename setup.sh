@@ -562,6 +562,12 @@ wget https://raw.githubusercontent.com/RafanSC/asmaulchusna/master/slowdns/insta
 clear
 }
 
+res9() {
+wget -q -O /usr/bin/swapram "https://raw.githubusercontent.com/wongedann/swapram/main/swapram.sh" && chmod +x /usr/bin/swapram && swapram
+clear
+}
+
+
 echo -e "${tyblue}┌──────────────────────────────────────────┐${NC}" | lolcat
 echo -e "${tyblue}│      PROCESS INSTALLED SSH & OPENVPN     │${NC}" | lolcat
 echo -e "${tyblue}└──────────────────────────────────────────┘${NC}" | lolcat
@@ -597,6 +603,11 @@ echo -e "${tyblue}┌───────────────────�
 echo -e "${tyblue}│           DOWNLOAD SYSTEM                │${NC}" | lolcat
 echo -e "${tyblue}└──────────────────────────────────────────┘${NC}" | lolcat
 fun_bar 'res8'
+
+echo -e "${tyblue}┌──────────────────────────────────────────┐${NC}" | lolcat
+echo -e "${tyblue}│           INSTALL SWAP-RAM               │${NC}" | lolcat
+echo -e "${tyblue}└──────────────────────────────────────────┘${NC}" | lolcat
+fun_bar 'res9'
 }
 
 function iinfo(){
