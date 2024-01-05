@@ -562,7 +562,7 @@ wget https://raw.githubusercontent.com/RafanSC/asmaulchusna/master/slowdns/insta
 clear
 }
 
-res9() {
+#res9() {
 wget https://raw.githubusercontent.com/RafanSC/asmaulchusna/master/install/udp-custom.sh && chmod +x udp-custom.sh && ./udp-custom.sh
 clear
 }
@@ -603,10 +603,10 @@ echo -e "${tyblue}│           DOWNLOAD SYSTEM                │${NC}" | lolca
 echo -e "${tyblue}└──────────────────────────────────────────┘${NC}" | lolcat
 fun_bar 'res8'
 
-echo -e "${tyblue}┌──────────────────────────────────────────┐${NC}" | lolcat
-echo -e "${tyblue}│           DOWNLOAD UDP COSTUM            │${NC}" | lolcat
-echo -e "${tyblue}└──────────────────────────────────────────┘${NC}" | lolcat
-fun_bar 'res9'
+#echo -e "${tyblue}┌──────────────────────────────────────────┐${NC}" | lolcat
+#echo -e "${tyblue}│           DOWNLOAD UDP COSTUM            │${NC}" | lolcat
+#echo -e "${tyblue}└──────────────────────────────────────────┘${NC}" | lolcat
+#fun_bar 'res9'
 }
 
 function iinfo(){
