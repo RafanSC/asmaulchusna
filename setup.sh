@@ -621,9 +621,9 @@ TIME=$(date +'%Y-%m-%d %H:%M:%S')
 RAMMS=$(free -m | awk 'NR==2 {print $2}')
 MODEL2=$(cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/PRETTY_NAME//g')
 MYIP=$(curl -sS ipv4.icanhazip.com | awk -F. '{ print $1"."$2".xxx.xxx" }')
-IZIN=$(curl -sS https://raw.githubusercontent.com/RafanSC/penamas/master/penak | grep $MYIP | awk '{print $3}')
-today=$(date +%Y-%m-%d)
+IZIN=$(curl -sS https://raw.githubusercontent.com/RafanSC/penamas/master/penak | grep $MYIP | awk '{print $3}' )
 d1=$(date -d "$IZIN" +%s)
+today=$(date +'%Y-%m-%d')
 d2=$(date -d "$today" +%s)
 EXP=$(( (d1 - d2) / 86400 ))
 
@@ -638,7 +638,7 @@ TEXT="
 <code>ISP : </code><code>${ISP} $CITY</code>
 <code>OS LINUX : </code><code>${MODEL2}</code>
 <code>RAM : </code><code>${RAMMS} MB</code>
-<code>EXP SCRIPT : </code><code>$EXP ${days}</code>
+<code>EXP SCRIPT : </code><code>$EXP Days</code>
 <code>◇━━━━━━━━━━━━━━━━━━━◇</code>
 <i>Automatic Notification From Installer Client...</i>
 "'&reply_markup={"inline_keyboard":[[{"text":"🛂ᴏʀᴅᴇʀ","url":"https://t.me/RafanSTR18"},{"text":"🎲GRUP","url":"https://t.me/vpnmix_1"}]]}'
