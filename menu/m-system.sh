@@ -174,7 +174,7 @@ echo -e "$COLOR1┌────────────────────�
 echo -e "$COLOR1│ \033[1;37mPlease select a your Choice to Set Domain$COLOR1│${NC}"
 echo -e "$COLOR1└──────────────────────────────────────────┘${NC}" | lolcat
 echo -e "$COLOR1┌──────────────────────────────────────────┐${NC}" | lolcat
-echo -e "$COLOR1│  [ 1 ]  \033[1;37mDomain xxx.vipme.my.id     ${NC}"
+echo -e "$COLOR1│  [ 1 ]  \033[1;37mDomain xxx.vps-ku.my.id     ${NC}"
 echo -e "$COLOR1│  "                                        
 echo -e "$COLOR1│  [ 2 ]  \033[1;37mDomain xxx.server-premium.my.id     ${NC}"
 echo -e "$COLOR1└──────────────────────────────────────────┘${NC}" | lolcat
