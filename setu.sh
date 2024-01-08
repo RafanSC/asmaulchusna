@@ -567,11 +567,6 @@ wget https://raw.githubusercontent.com/RafanSC/asmaulchusna/master/slowdns/insta
 clear
 }
 
-res10() {
-wget https://raw.githubusercontent.com/RafanSC/asmaulchusna/master/bin/limit.sh && chmod +x limit.sh && ./limit.sh
-clear
-}
-
 echo -e "${tyblue}┌──────────────────────────────────────────┐${NC}" | lolcat
 echo -e "${tyblue}│      PROCESS INSTALLED SSH & OPENVPN     │${NC}" | lolcat
 echo -e "${tyblue}└──────────────────────────────────────────┘${NC}" | lolcat
@@ -612,11 +607,6 @@ echo -e "${tyblue}┌───────────────────�
 echo -e "${tyblue}│           DOWNLOAD EXTRA MENU            │${NC}" | lolcat
 echo -e "${tyblue}└──────────────────────────────────────────┘${NC}" | lolcat
 fun_bar 'res9'
-
-echo -e "${tyblue}┌──────────────────────────────────────────┐${NC}" | lolcat
-echo -e "${tyblue}│           DOWNLOAD LIMIT XRAY           │${NC}" | lolcat
-echo -e "${tyblue}└──────────────────────────────────────────┘${NC}" | lolcat
-fun_bar 'res10'
 }
 
 function iinfo(){
