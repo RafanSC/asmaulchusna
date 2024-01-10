@@ -800,7 +800,6 @@ echo -e "$COLOR1│${NC}${COLBG1}              ${WH}• SSH ACTIVE USERS •    
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" | lolcat
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | lolcat
 echo -e ""
-rm -rf /tmp/ssh2
 sleep 3
 if [ -e "/var/log/auth.log" ]; then
 LOG="/var/log/auth.log";
