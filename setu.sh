@@ -601,7 +601,7 @@ fun_bar 'res6'
 
 
 echo -e "${tyblue}┌──────────────────────────────────────────┐${NC}" | lolcat
-echo -e "${tyblue}│           DOWNLOAD LIMIT XRAY           │${NC}" | lolcat
+echo -e "${tyblue}│           DOWNLOAD LIMIT XRAY            │${NC}" | lolcat
 echo -e "${tyblue}└──────────────────────────────────────────┘${NC}" | lolcat
 fun_bar 'res7'
 
@@ -616,7 +616,7 @@ echo -e "${tyblue}└───────────────────�
 fun_bar 'res9'
 
 echo -e "${tyblue}┌──────────────────────────────────────────┐${NC}" | lolcat
-echo -e "${tyblue}│           DOWNLOAD XTRA MENU               │${NC}" | lolcat
+echo -e "${tyblue}│           DOWNLOAD XTRA MENU             │${NC}" | lolcat
 echo -e "${tyblue}└──────────────────────────────────────────┘${NC}" | lolcat
 fun_bar 'res10'
 }
