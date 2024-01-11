@@ -9,6 +9,3 @@
 
 # Selesai
 echo "Instalasi selesai."
-
-# menghapus paket
-rm -rf cron.sh
