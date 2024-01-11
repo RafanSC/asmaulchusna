@@ -1,14 +1,5 @@
 #!/bin/bash
 
-# menjalankan perintah
-# ...
-
-# Menambahkan cron job
-crontab -l | { cat; echo "* * * * * /usr/bin/xp"; } | crontab -
-
-# Selesai
-
-
 ##----- Auto Remove SSH
 data=( `cat /etc/xray/ssh | grep '^###' | cut -d ' ' -f 2 | sort | uniq`);
 now=`date +"%Y-%m-%d"`
