@@ -36,8 +36,8 @@ fi
 inaIP=$(wget -qO- ipv4.icanhazip.com)
 timenow=$(date +%T" WIB")
 TIMES="10"
-CHATID=$(cat /etc/perlogin/id)
-KEY=$(cat /etc/perlogin/token)
+CHATID=$(cat /etc/id)
+KEY=$(cat /etc/token)
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 domen=`cat /etc/xray/domain`
 ISP=$(cat /etc/xray/isp)
