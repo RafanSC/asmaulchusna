@@ -1,6 +1,6 @@
 #!/bin/bash
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
-colornow=$(cat /etc/rafan/theme/color.conf)
+colornow=$(cat /etc/RafanSC/theme/color.conf)
 NC="\e[0m"
 RED="\033[0;31m"
 COLOR1="$(cat /etc/RafanSC/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
