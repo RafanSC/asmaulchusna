@@ -84,11 +84,11 @@ wget https://raw.githubusercontent.com/RafanSC/asmaulchusna/master/slowdns/insta
 res1() {
 cd
 MYIP=$(wget -qO- icanhazip.com);
-DOMAIN=vps-ku.my.id
+DOMAIN=vipme.my.id
 sub=$(cat /root/subdomainx)
-dns=${sub}.vps-ku.my.id
-CF_ID=rosidlungset@gmail.com
-CF_KEY=837c3556803df2af29f614b30fbbdd6b83974
+dns=${sub}.vipme.my.id
+CF_ID=andyyuda41@gmail.com
+CF_KEY=0d626234700bad388d6d07b49c42901445d1c
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${dns}..."
@@ -174,7 +174,7 @@ echo -e "$COLOR1┌────────────────────�
 echo -e "$COLOR1│ \033[1;37mPlease select a your Choice to Set Domain$COLOR1│${NC}"
 echo -e "$COLOR1└──────────────────────────────────────────┘${NC}" | lolcat
 echo -e "$COLOR1┌──────────────────────────────────────────┐${NC}" | lolcat
-echo -e "$COLOR1│  [ 1 ]  \033[1;37mDomain xxx.vps-ku.my.id     ${NC}"
+echo -e "$COLOR1│  [ 1 ]  \033[1;37mDomain xxx.vipme.my.id     ${NC}"
 echo -e "$COLOR1│  "                                        
 echo -e "$COLOR1│  [ 2 ]  \033[1;37mDomain xxx.server-premium.my.id     ${NC}"
 echo -e "$COLOR1└──────────────────────────────────────────┘${NC}" | lolcat

@@ -35,8 +35,8 @@ checking_sc
 rm -rf /tmp/ssh
 clear
 TIMES="10"
-CHATID=$(cat /etc/id)
-KEY=$(cat /etc/token)
+CHATID=$(cat /etc/perlogin/id)
+KEY=$(cat /etc/perlogin/token)
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 domen=`cat /etc/xray/domain`
 DATE=$(date +'%Y-%m-%d') 

@@ -39,8 +39,8 @@ CHATID=$(cat /etc/per/id)
 KEY=$(cat /etc/per/token)
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 domain=`cat /etc/xray/domain`
-CHATID2=$(cat /etc/per/id)
-KEY2=$(cat /etc/per/token)
+CHATID2=$(cat /etc/perlogin/id)
+KEY2=$(cat /etc/perlogin/token)
 URL2="https://api.telegram.org/bot$KEY2/sendMessage"
 cd
 if [ ! -e /etc/vmess/akun ]; then
